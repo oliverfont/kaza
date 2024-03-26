@@ -3,7 +3,7 @@ import '../styles/Header.css'
 
 function Header() {
     return <header>
-                <img src={logo} alt='Logo Kaza' className='logo' />
+                <a href='/'><img src={logo} alt='Logo Kaza' className='logo' /></a>
                 <nav>
                         <a href='/'>Accueil</a>
                         <a href='/apropos'>A propos</a>
