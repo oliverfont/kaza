@@ -7,16 +7,22 @@ import Article from './pages/Article/index.jsx';
 import NotFound from './pages/NotFound/index.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import Header from './pages/Home/Header.js';
+import Footer from './pages/Home/Footer.js';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/article/:id" element={<Article />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -31,21 +31,9 @@ const Article = () => {
         </span>
       );
     };
-  
-
-  if (!article) {
-    return (
-      <div className='body'>
-        <Header />
-        <NotFound />
-        <Footer />
-      </div>
-    );
-  }
 
   return (
     <div className='body'>
-      <Header />
       <div className="article-details">
         <div className='banner2'>
           <img src={article.cover} alt={`Image de "${article.title}"`} className="artBan" />
@@ -93,7 +81,6 @@ const Article = () => {
         </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

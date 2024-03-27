@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className='body'>
-      <Header />
       <Banner backgroundType="apropos" />
       <div className="about-list">
         {aboutList.map((item, index) => (
@@ -30,7 +29,6 @@ function App() {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

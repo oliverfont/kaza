@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;font: fallback;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -44,6 +44,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdown-content.open {
+
 }
 
 .dropdown2 {
@@ -112,6 +117,8 @@
 li {
   margin-bottom: 5px;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
