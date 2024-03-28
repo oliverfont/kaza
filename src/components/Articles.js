@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
-import logements from './data/logements.json';
-import '../styles/Articles.css';
+import { Link } from 'react-router-dom';
+import logements from '../assets/data/logements.json';
+import './styles/Articles.css';
 
 function Articles() {
   return (
