@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Article.css';
-import logements from '../Home/data/logements.json';
+import logements from '../../assets/data/logements.json';
 import { useParams } from 'react-router-dom';
-import Header from '../Home/Header';
-import Footer from '../Home/Footer';
-import NotFound from '../NotFound/index';
 
 const Article = () => {
   const { id } = useParams();

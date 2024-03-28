@@ -7,8 +7,8 @@ import Article from './pages/Article/index.jsx';
 import NotFound from './pages/NotFound/index.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import Header from './pages/Home/Header.js';
-import Footer from './pages/Home/Footer.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 
 

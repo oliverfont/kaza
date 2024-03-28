@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/Home.css';
-import Header from '../Home/Header'
-import Footer from '../Home/Footer'
 import Banner from './Banner';
 import { aboutList } from './AboutList';
 
@@ -17,16 +15,16 @@ function App() {
       <Banner backgroundType="apropos" />
       <div className="about-list">
         {aboutList.map((item, index) => (
-          <div key={index} className="dropdowns">
-            <div className="dropdown" onClick={() => handleDropdownClick(item.title)}>
-              <h3>{item.title}</h3>
-            </div>
-            {selectedTitle === item.title && (
-              <div className="description">
-                <p>{item.content}</p>
-              </div>
-            )}
-          </div>
+          <div key={index} className={`dropdowns ${selectedTitle === item.title ? 'open' : 'closed'}`}>
+  <div className="dropdown" onClick={() => handleDropdownClick(item.title)}>
+    <h3>{item.title}</h3>
+  </div>
+  <div className="description">
+    {selectedTitle === item.title && (
+      <p>{item.content}</p>
+    )}
+  </div>
+</div>
         ))}
       </div>
     </div>
