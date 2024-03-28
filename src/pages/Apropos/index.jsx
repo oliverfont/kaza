@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Home.css';
 import Banner from './Banner';
-import { aboutList } from './AboutList';
+import Dropdown from '../../components/Dropdown';
+import { aboutList } from '../../assets/data/AboutList';
 
 function App() {
   const [selectedTitle, setSelectedTitle] = useState(null);
@@ -15,16 +16,7 @@ function App() {
       <Banner backgroundType="apropos" />
       <div className="about-list">
         {aboutList.map((item, index) => (
-          <div key={index} className={`dropdowns ${selectedTitle === item.title ? 'open' : 'closed'}`}>
-  <div className="dropdown" onClick={() => handleDropdownClick(item.title)}>
-    <h3>{item.title}</h3>
-  </div>
-  <div className="description">
-    {selectedTitle === item.title && (
-      <p>{item.content}</p>
-    )}
-  </div>
-</div>
+          <Dropdown key={index} title={item.title} content={item.content} selectedTitle={selectedTitle} onClick={() => handleDropdownClick(item.title)} />
         ))}
       </div>
     </div>
