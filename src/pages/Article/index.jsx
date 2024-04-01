@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import '../styles/Article.css';
 import logements from '../../assets/data/logements.json';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Dropdown from '../../components/Dropdown';
 
 const Article = () => {
   const { id } = useParams();
   const article = logements[id];
+  const navigate = useNavigate();
   const [selectedTitle, setSelectedTitle] = useState(null);
+
+
+  // Vérifie si l'article avec l'ID spécifié existe
+  if (!article) {
+    // Si l'article n'existe pas, naviguez vers la page 404
+    navigate('/NotFound');
+  }
 
   const handleDropdownClick = (title) => {
     setSelectedTitle(selectedTitle === title ? null : title);

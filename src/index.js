@@ -10,14 +10,12 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/"  element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/article/:id" element={<Article />} />
         <Route path="*" element={<NotFound />} />
