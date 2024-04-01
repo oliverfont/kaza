@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Article.css';
 import logements from '../../assets/data/logements.json';
 import { useParams } from 'react-router-dom';
@@ -7,6 +7,11 @@ import Dropdown from '../../components/Dropdown';
 const Article = () => {
   const { id } = useParams();
   const article = logements[id];
+  const [selectedTitle, setSelectedTitle] = useState(null);
+
+  const handleDropdownClick = (title) => {
+    setSelectedTitle(selectedTitle === title ? null : title);
+  };
 
   // Fonction pour convertir le rating en étoiles
   const getStarRating = (rating) => {
@@ -54,17 +59,19 @@ const Article = () => {
         </div>
         <div className='dropdowns2'>
           <div className='containDropdown'>
-            {/* Utilisation du composant Dropdown pour la description */}
             <Dropdown
               title="Description"
               content={article.description}
+              selectedTitle={selectedTitle}
+              onClick={handleDropdownClick}
             />
           </div>
           <div className='containDropdown'>
-            {/* Utilisation du composant Dropdown pour les équipements */}
             <Dropdown
               title="Equipements"
-              content={article.equipments.join(', ')}
+              content={article.equipments}
+              selectedTitle={selectedTitle}
+              onClick={handleDropdownClick}
             />
           </div>
         </div>
