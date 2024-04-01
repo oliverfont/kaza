@@ -1,75 +1,70 @@
- .dropdowns {
-    margin: 30px 10%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dropdown {
-    padding: 1px 10px;
-    border-radius: 10px;
-    background-color: #FF6060;
-    color: white;
-    display: flex; 
-    justify-content: space-between;
-  }
+.dropdowns {
+  margin: 30px 10%;
+  display: flex;
+  flex-direction: column;
+}
 
-  .dropdowns2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    transition: max-height 0.8s ease-out;
-  }
-  
-  .dropdown2 {
-    background-color: #FF6060;
-    color: white;
-    padding: 15px 10px;
-    border-radius: 10px;
-  }
+.dropdown {
+  padding: 1px 10px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  display: flex; 
+  justify-content: space-between;
+}
 
-  .containDropdown {
-    width: 45%;
-  }
+.dropdowns2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  .description {
-    padding: 1px 30px;
-    line-height: 150%;
-    background-color: #f6f6f6;
-    border-radius: 13px;
-    margin: -25px 0 auto;
-    z-index: -1;
-    position: relative;
-  }
+.dropdown2 {
+  background-color: #FF6060;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
 
-  .description2 {
-    padding: 1px 30px;
-    line-height: 150%;
-    background-color: #f6f6f6;
-    border-radius: 13px;
-    margin: -25px 0;
-    z-index: -1;
-    position: relative;
-  }
+.containDropdown {
+  width: 45%;
+}
 
-  .description3 {
-    padding: 1px 30px;
-    line-height: 150%;
-    background-color: #f6f6f6;
-    border-radius: 13px;
-    margin: -25px 0;
-    z-index: -1;
-    position: relative;
-  }
-  
-  .description p {
-    color: black;
-    margin-top: 40px;
-  }
-  
-  .description2 ul {
-    margin-top: 15px;
-  }
+.description, .description2, .description3 {
+  padding: 1px 30px;
+  line-height: 150%;
+  background-color: #f6f6f6;
+  border-radius: 13px;
+  margin: -25px 0 25px 0;
+  z-index: -1;
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
 
-  .arrow {
-    width: 3%;
-  }
+.description2, .description3 {
+  margin: -25px 0;
+}
+
+.description p {
+  color: black;
+  margin-top: 40px;
+}
+
+.description ul {
+  margin: 35px 0 0 -40px;
+}
+
+.arrow {
+  width: 30px;
+  transition: transform 0.4s ease;
+}
+
+.dropdowns.open .arrow {
+  transform: rotate(-180deg);
+}
+
+.dropdowns.open .description {
+  max-height: 500px; 
+}
