@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Article.css';
 import logements from '../../assets/data/logements.json';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -10,12 +10,13 @@ const Article = () => {
   const navigate = useNavigate();
   const [selectedTitle, setSelectedTitle] = useState(null);
 
-
-  // Vérifie si l'article avec l'ID spécifié existe
-  if (!article) {
-    // Si l'article n'existe pas, naviguez vers la page 404
-    navigate('/NotFound');
-  }
+  useEffect(() => {
+    // Vérifie si l'article avec l'ID spécifié existe
+    if (!article) {
+      // Si l'article n'existe pas, navigue vers la page 404
+      navigate('/NotFound');
+    }
+  }, [article, navigate]);
 
   const handleDropdownClick = (title) => {
     setSelectedTitle(selectedTitle === title ? null : title);
@@ -32,6 +33,11 @@ const Article = () => {
       </span>
     );
   };
+
+  // Si l'article n'existe pas, retourne null pour éviter tout rendu indésirable
+  if (!article) {
+    return null;
+  }
 
   return (
     <div className='body'>
