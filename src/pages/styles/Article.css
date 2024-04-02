@@ -30,3 +30,86 @@ ul {
     color: white;
     font-weight: bold;
 }
+
+.star {
+    color: #FF6060;
+    font-size: 40px;
+}
+
+.emptystar {
+    font-size: 40px;
+    color: #E3E3E3;
+}
+
+@media screen and (max-width: 768px) {
+.article-details {
+    position: relative;
+}
+
+    .flexbox, .flexbox2, .flexbox3 {
+        flex-wrap: wrap;
+    }
+
+    .flexbox2 {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .tagContain {
+        margin: 0;
+    }
+
+    .stars {
+        position: absolute;
+        top: 390px;
+        left: 0px;
+    }
+
+    .star {
+        width: 10%;
+        font-size: x-large;
+    }
+
+    .emptystar {
+        font-size: x-large;
+    }
+
+    .host {
+        width: 60px;
+        position: absolute;
+        right: 65px;
+        flex-wrap: wrap;
+        text-align: end;      }
+
+    .hostIMG {
+        width: 60px;
+    }
+
+    .tagContain ul {
+        flex-wrap: wrap;
+    }
+
+    .tagContain li {
+        width: 90px;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .titre h3 {
+        font-size: 18px;
+    }
+
+    .dropdown h3 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: normal;
+    }
+}
