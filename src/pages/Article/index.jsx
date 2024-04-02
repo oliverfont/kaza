@@ -3,12 +3,15 @@ import '../styles/Article.css';
 import logements from '../../assets/data/logements.json';
 import { useParams, useNavigate } from 'react-router-dom';
 import Dropdown from '../../components/Dropdown';
+import Carousel from '../../components/Carousel';
 
 const Article = () => {
   const { id } = useParams();
   const article = logements[id];
   const navigate = useNavigate();
   const [selectedTitle, setSelectedTitle] = useState(null);
+
+  const images = article.pictures || [];
 
   useEffect(() => {
     // Vérifie si l'article avec l'ID spécifié existe
@@ -43,7 +46,7 @@ const Article = () => {
     <div className='body'>
       <div className="article-details">
         <div className='banner2'>
-          <img src={article.cover} alt={`Image de "${article.title}"`} className="artBan" />
+          <Carousel images={images} />
         </div>
         <div className='flexbox'>
           <div className='flexbox3'>
