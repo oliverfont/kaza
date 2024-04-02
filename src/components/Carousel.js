@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/styles/Carousel.css';
+import './styles/Carousel.scss';
 import flch from '../assets/img/flch.svg';
 
 const Carousel = ({ images }) => {

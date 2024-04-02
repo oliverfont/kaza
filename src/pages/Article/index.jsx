@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Article.css';
+import '../styles/Article.scss';
 import logements from '../../assets/data/logements.json';
 import { useParams, useNavigate } from 'react-router-dom';
 import Dropdown from '../../components/Dropdown';

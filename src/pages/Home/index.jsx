@@ -1,4 +1,4 @@
-import '../styles/Home.css';
+import '../styles/Home.scss';
 //import Header from './Header'
 import Banner from '../../components/Banner'
 import Articles from '../../components/Articles'

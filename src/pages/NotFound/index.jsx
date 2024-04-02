@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Home.css';
-import '../styles/NotFound.css';
+import '../styles/Home.scss';
+import '../styles/NotFound.scss';
 import { Link } from 'react-router-dom';
 import qcq from '../../assets/img/404.svg'
 

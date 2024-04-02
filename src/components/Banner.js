@@ -1,5 +1,5 @@
 import background from '../assets/img/IMG.png'
-import './styles/Banner.css'
+import './styles/Banner.scss'
 
 function Banner() {
     return <div className="banner">

@@ -1,0 +1,40 @@
+.carousel-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  font-size: 39px;
+  margin: -70px;
+  position: relative;
+  background: none;
+
+  &.prev-btn {
+    transform: rotateY(180deg);
+  }
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.artBan {
+  object-fit: cover;
+  height: 415px;
+  border-radius: 13px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .flch {
+    width: 25px;
+    margin: auto;
+  }
+
+  .artBan {
+    height: 255px;
+  }
+}

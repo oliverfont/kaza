@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/Dropdown.css';
+import './styles/Dropdown.scss';
 import Arrow from '../assets/img/arrow.svg';
 
 function Dropdown({ title, content, isOpen, onClick }) {

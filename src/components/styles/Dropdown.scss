@@ -2,6 +2,10 @@
   margin: 25px 0;
   display: flex;
   flex-direction: column;
+
+  &.open .description {
+    max-height: 500px;
+  }
 }
 
 .dropdown {
@@ -9,7 +13,7 @@
   border-radius: 10px;
   background-color: #FF6060;
   color: white;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
@@ -41,19 +45,19 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+
+  p {
+    color: black;
+    margin-top: 40px;
+  }
+
+  ul {
+    margin: 35px 0 0 -40px;
+  }
 }
 
 .description2, .description3 {
   margin: -25px 0;
-}
-
-.description p {
-  color: black;
-  margin-top: 40px;
-}
-
-.description ul {
-  margin: 35px 0 0 -40px;
 }
 
 .arrow {
@@ -63,10 +67,6 @@
 
 .dropdowns.open .arrow {
   transform: rotate(-180deg);
-}
-
-.dropdowns.open .description {
-  max-height: 500px; 
 }
 
 .about-list {
@@ -90,7 +90,7 @@
     margin: 10px 0;
   }
 
-  .tagContain ul{
+  .tagContain ul {
     padding: 0;
   }
 }

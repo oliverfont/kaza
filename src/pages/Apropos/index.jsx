@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Home.css';
+import '../styles/Home.scss';
 import Banner from './Banner';
 import Dropdown from '../../components/Dropdown';
 import { aboutList } from '../../assets/data/AboutList';
