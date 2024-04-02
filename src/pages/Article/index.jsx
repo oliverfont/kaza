@@ -11,8 +11,6 @@ const Article = () => {
   const navigate = useNavigate();
   const [selectedTitle, setSelectedTitle] = useState(null);
 
-  const images = article.pictures || [];
-
   useEffect(() => {
     // Vérifie si l'article avec l'ID spécifié existe
     if (!article) {
@@ -41,6 +39,9 @@ const Article = () => {
   if (!article) {
     return null;
   }
+
+
+  const images = article.pictures || [];
 
   return (
     <div className='body'>
