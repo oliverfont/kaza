@@ -30,7 +30,11 @@
 
   @media screen and (max-width: 768px) {
     .flch {
-      width: 30px;
+      width: 25px;
       margin: auto;
+    }
+
+    .artBan {
+      height: 255px;
     }
   }

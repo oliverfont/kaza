@@ -42,9 +42,12 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+.article-details {
+    position: relative;
+}
+
     .flexbox, .flexbox2, .flexbox3 {
         flex-wrap: wrap;
-        position: relative;
     }
 
     .flexbox2 {
@@ -58,7 +61,8 @@ ul {
 
     .stars {
         position: absolute;
-        top: -80px;
+        top: 390px;
+        left: 0px;
     }
 
     .star {
@@ -71,11 +75,41 @@ ul {
     }
 
     .host {
-        width: auto;
-    }
+        width: 60px;
+        position: absolute;
+        right: 65px;
+        flex-wrap: wrap;
+        text-align: end;      }
 
     .hostIMG {
-        width: 20%;
+        width: 60px;
+    }
 
+    .tagContain ul {
+        flex-wrap: wrap;
+    }
+
+    .tagContain li {
+        width: 90px;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .titre h3 {
+        font-size: 18px;
+    }
+
+    .dropdown h3 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: normal;
     }
 }

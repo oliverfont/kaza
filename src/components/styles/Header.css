@@ -34,7 +34,7 @@ header {
         align-items: flex-end;
         width: 33%;
         flex-wrap: wrap;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     nav a {
