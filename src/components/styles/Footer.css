@@ -14,3 +14,17 @@
 .footer p {
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+    margin-bottom: 0px;
+    }
+
+    .footer p {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 135px;
+        text-align: center;
+    }
+}

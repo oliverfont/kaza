@@ -35,3 +35,21 @@ font-weight: 500;
 line-height: 142.6%;
 text-decoration-line: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .qcq {
+        margin: 10%;
+    }
+
+    .oups {
+        margin: 10%;
+        font-size: 99%;
+        text-align: center;
+    }
+
+    .backHome {
+        margin: 10%;
+        font-size: 99%;
+        text-align: center;
+    }
+}

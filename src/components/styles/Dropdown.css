@@ -68,3 +68,22 @@
 .dropdowns.open .description {
   max-height: 500px; 
 }
+
+
+@media screen and (max-width: 768px) {
+  .dropdowns2 {
+    flex-direction: column;
+  }
+
+  .containDropdown {
+    width: auto;
+  }
+
+  .dropdowns {
+    margin: 10px 0;
+  }
+
+  .tagContain ul{
+    padding: 0;
+  }
+}

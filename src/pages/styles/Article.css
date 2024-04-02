@@ -30,3 +30,52 @@ ul {
     color: white;
     font-weight: bold;
 }
+
+.star {
+    color: #FF6060;
+    font-size: 40px;
+}
+
+.emptystar {
+    font-size: 40px;
+    color: #E3E3E3;
+}
+
+@media screen and (max-width: 768px) {
+    .flexbox, .flexbox2, .flexbox3 {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .flexbox2 {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .tagContain {
+        margin: 0;
+    }
+
+    .stars {
+        position: absolute;
+        top: -80px;
+    }
+
+    .star {
+        width: 10%;
+        font-size: x-large;
+    }
+
+    .emptystar {
+        font-size: x-large;
+    }
+
+    .host {
+        width: auto;
+    }
+
+    .hostIMG {
+        width: 20%;
+
+    }
+}

@@ -24,3 +24,31 @@ nav a:hover {
 .active {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 768px) {
+header {
+    align-items: center;
+}
+
+    nav {
+        align-items: flex-end;
+        width: 33%;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    nav a {
+        margin-bottom: 0px;
+        font-size: 99%;
+    }
+
+    .logo {
+        height: 50px;
+        margin-bottom: 0px;
+      }
+
+    .tagContain li {
+        align-items: center;
+        display: flex;
+    }
+}
