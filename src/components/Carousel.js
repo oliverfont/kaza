@@ -15,9 +15,9 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel-container">
-      <button className="carousel-btn prev-btn" onClick={handlePrev}><img src={flch}/></button>
+      <button className="carousel-btn prev-btn" onClick={handlePrev}><img className='flch' src={flch}/></button>
       <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="artBan" />
-      <button className="carousel-btn next-btn" onClick={handleNext}><img src={flch}/></button>
+      <button className="carousel-btn next-btn" onClick={handleNext}><img className='flch' src={flch}/></button>
     </div>
   );
 };

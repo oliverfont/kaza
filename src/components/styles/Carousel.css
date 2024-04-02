@@ -27,3 +27,14 @@
     border-radius: 13px;
     width: 100%;
   }
+
+  @media screen and (max-width: 768px) {
+    .flch {
+      width: 25px;
+      margin: auto;
+    }
+
+    .artBan {
+      height: 255px;
+    }
+  }

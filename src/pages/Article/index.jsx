@@ -30,9 +30,9 @@ const Article = () => {
     const filledStars = '★'.repeat(rating);
     const emptyStars = '★'.repeat(5 - rating);
     return (
-      <span>
-        <span style={{ color: '#FF6060', fontSize: '40px' }}>{filledStars}</span>
-        <span style={{ color: '#E3E3E3', fontSize: '40px' }}>{emptyStars}</span>
+      <span className='stars'>
+        <span className='star'>{filledStars}</span>
+        <span className='emptystar'>{emptyStars}</span>
       </span>
     );
   };

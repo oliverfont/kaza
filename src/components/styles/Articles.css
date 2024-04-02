@@ -1,7 +1,7 @@
 .articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 50px;
     margin: 50px;
     padding: 50px;
@@ -36,3 +36,17 @@ h2 {
   .tagContain {
     margin: -40px;
   }
+
+  @media screen and (max-width: 768px) {
+.articles {
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+}
+
+.imgArticle {
+    width: 255px;
+    height: 255px;
+}
+
+}
