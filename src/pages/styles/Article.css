@@ -44,15 +44,19 @@ ul {
 @media screen and (max-width: 768px) {
 .article-details {
     position: relative;
+    margin: 20px 20px;
 }
 
     .flexbox, .flexbox2, .flexbox3 {
         flex-wrap: wrap;
+        margin-bottom: 30px;
     }
 
     .flexbox2 {
         width: 100%;
         justify-content: end;
+        position: absolute;
+        top: 415px;
     }
 
     .tagContain {
@@ -61,7 +65,7 @@ ul {
 
     .stars {
         position: absolute;
-        top: 390px;
+        top: 420px;
         left: 0px;
     }
 
@@ -79,10 +83,18 @@ ul {
         position: absolute;
         right: 65px;
         flex-wrap: wrap;
-        text-align: end;      }
+        text-align: end;
+        font-size: 10px;
+    }
 
     .hostIMG {
-        width: 60px;
+        width: 33px;
+    }
+
+    .tagContain {
+        margin: 0;
+        position: absolute;
+        top: 360px;
     }
 
     .tagContain ul {
@@ -90,7 +102,7 @@ ul {
     }
 
     .tagContain li {
-        width: 90px;
+        width: 10px;
         justify-content: center;
         font-size: 10px;
     }
