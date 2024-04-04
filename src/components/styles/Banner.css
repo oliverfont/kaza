@@ -53,4 +53,8 @@ h1 {
     .bgBanner {
         height: 111px;
     }
+
+    .banner2 {
+        margin-bottom: 15px;
+    }
 }

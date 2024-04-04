@@ -93,4 +93,8 @@
   .tagContain ul{
     padding: 0;
   }
+
+  .description p {
+    margin-top: 30px;
+  }
 }

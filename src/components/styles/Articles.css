@@ -33,10 +33,6 @@ h2 {
     max-width: 77%;
   }
 
-  .tagContain {
-    margin: -40px;
-  }
-
   @media screen and (max-width: 768px) {
 .articles {
     justify-content: center;

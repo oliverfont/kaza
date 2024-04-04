@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home/index.jsx';
 import Apropos from './pages/Apropos/index.jsx';
@@ -10,8 +10,8 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
-ReactDOM.render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
     <Router>
       <Header />
       <Routes>
@@ -23,7 +23,6 @@ ReactDOM.render(
       <Footer />
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 reportWebVitals();
