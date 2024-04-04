@@ -20,6 +20,8 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .tagContain li {
@@ -41,6 +43,21 @@ ul {
     color: #E3E3E3;
 }
 
+.hostContain {
+    display: flex;
+    align-items: center;
+}
+
+.host {
+    text-align: end;
+    margin-right: 15px;
+}
+
+.flexbox2 {
+    justify-content: end;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 768px) {
 .article-details {
     position: relative;
@@ -49,14 +66,6 @@ ul {
 
     .flexbox, .flexbox2, .flexbox3 {
         flex-wrap: wrap;
-        margin-bottom: 30px;
-    }
-
-    .flexbox2 {
-        width: 100%;
-        justify-content: end;
-        position: absolute;
-        top: 415px;
     }
 
     .tagContain {
@@ -64,24 +73,19 @@ ul {
     }
 
     .stars {
-        position: absolute;
-        top: 420px;
-        left: 0px;
     }
 
     .star {
         width: 10%;
-        font-size: x-large;
+        font-size: 18px;
     }
 
     .emptystar {
-        font-size: x-large;
+        font-size: 18px;
     }
 
     .host {
         width: 60px;
-        position: absolute;
-        right: 65px;
         flex-wrap: wrap;
         text-align: end;
         font-size: 10px;
@@ -93,8 +97,6 @@ ul {
 
     .tagContain {
         margin: 0;
-        position: absolute;
-        top: 360px;
     }
 
     .tagContain ul {
@@ -123,5 +125,12 @@ ul {
     .description {
         font-size: 13px;
         line-height: normal;
+    }
+
+    .flexbox2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0;
     }
 }

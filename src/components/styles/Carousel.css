@@ -28,6 +28,12 @@
     width: 100%;
   }
 
+  .photo-counter {
+    color: white;
+    position: absolute;
+    bottom: 25px;
+  }
+
   @media screen and (max-width: 768px) {
     .flch {
       width: 25px;
@@ -36,5 +42,9 @@
 
     .artBan {
       height: 255px;
+    }
+
+    .photo-counter {
+      display: none;
     }
   }
