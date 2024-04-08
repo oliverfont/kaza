@@ -73,7 +73,7 @@ const Article = () => {
           <div className='flexbox2'>
             <div className="hostContain">
             <p className='host'>{article.host.name}</p>
-            <img className='hostIMG' src={article.host.picture} alt={`Image de "${article.host.name}"`} />
+            <img className='hostIMG' src={article.host.picture} alt={`Image : "${article.host.name}"`} />
             </div>
             <div>{getStarRating(article.rating)}</div>
           </div>
