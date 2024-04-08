@@ -12,7 +12,7 @@ function Articles() {
         <Link to={`/article/${logement.id}`} key={logement.id} className="article-link">
           <div className="article">
             <h2>{logement.title}</h2>
-            <img src={logement.cover} alt={`Image de "${logement.title}"`} className="imgArticle" />
+            <img src={logement.cover} alt={`Photo de "${logement.title}"`} className="imgArticle" />
           </div>
         </Link>
       ))}
