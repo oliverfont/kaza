@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/"  element={<Home />} />
-        <Route path="/home"  element={<Home />} />
+        <Route path="/kaza/"  element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/article/:id" element={<Article />} />
         <Route path="*" element={<NotFound />} />
