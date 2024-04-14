@@ -2,7 +2,7 @@
   "name": "kaza",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oliverfont.github.io/kaza/",
+  "homepage": "https://oliverfont.github.io/kasa/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
