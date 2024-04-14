@@ -15,10 +15,10 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/kaza"  element={<Home />} />
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path="/article/:id" element={<Article />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/kasa"  element={<Home />} />
+        <Route path="/kasa/apropos" element={<Apropos />} />
+        <Route path="/kasa/article/:id" element={<Article />} />
+        <Route path="/kasa/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
