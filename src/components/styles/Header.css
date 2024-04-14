@@ -36,7 +36,7 @@ header {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: right;
-        gap: 26px;
+        gap: 10%;
     }
 
     nav a {
@@ -44,7 +44,8 @@ header {
     }
 
     .logo {
-        height: 50px;
+        height: 99%;
+        width: 99%;
         margin-bottom: 0px;
       }
 
