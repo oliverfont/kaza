@@ -5,11 +5,11 @@ import './styles/Header.css';
 function Header() {
   return (
     <header>
-      <NavLink to="/" exact="true">
+      <NavLink to="/kaza" exact="true">
         <img src={logo} alt="Logo Kaza" className="logo" />
       </NavLink>
       <nav>
-        <NavLink to="/" exact="true">
+        <NavLink to="/kaza" exact="true">
           Accueil
         </NavLink>
         <NavLink to="/apropos">
