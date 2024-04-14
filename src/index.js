@@ -1,31 +1,39 @@
+
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './index.css';
-import Home from './pages/Home/index.jsx';
-import Apropos from './pages/Apropos/index.jsx';
-import Article from './pages/Article/index.jsx';
-import NotFound from './pages/NotFound/index.jsx';
-import { BrowserRouter as Router, Routes, Switch, Route } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
+import Home from './pages/Home'; 
+import About from './pages/About';
+import Article from './pages/Article';
+import NotFound from './pages/NotFound';
 
-createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+const root = createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
     <Router>
+      
       <Header />
-      <Routes>
-      <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/kaza" component={Home}/>
-        </Switch>
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path="/article/:id" element={<Article />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </Router>
-  </React.StrictMode>,
-);
 
-reportWebVitals();
+      <Switch>
+      
+        <Route exact path="/" element={<Home />} />
+      
+        <Route path="/about" element={<About />} />
+        
+        <Route path="/articles/:id" element={<Article />} />
+        
+        <Route path="*" element={<NotFound />} />
+      
+      </Switch>
+      
+      <Footer />
+      
+    </Router>
+  </React.StrictMode>
+);
