@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 
 import Home from './pages/Home';
-import About from './pages/About';  
+import Apropos from './pages/Apropos';  
 import Article from './pages/Article';
 import NotFound from './pages/NotFound';
 
@@ -23,7 +23,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           
-          <Route path="/about" element={<About />} />
+          <Route path="/apropos" element={<Apropos />} />
         
           <Route path="/article/:id" element={<Article />} />
         
