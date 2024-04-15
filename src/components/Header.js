@@ -5,14 +5,14 @@ import './styles/Header.css';
 function Header() {
   return (
     <header>
-      <NavLink to="/kasa/home" exact="true">
+      <NavLink to="/" exact="true">
         <img src={logo} alt="Logo Kasa" className="logo" />
       </NavLink>
       <nav>
-        <NavLink to="/kasa/home" exact="true">
+        <NavLink to="/" exact="true">
           Accueil
         </NavLink>
-        <NavLink to="kasa/apropos">
+        <NavLink to="/apropos">
           À propos
         </NavLink>
       </nav>

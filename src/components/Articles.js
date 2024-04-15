@@ -9,7 +9,7 @@ function Articles() {
   return (
     <div className="articles">
       {articlesArray.map((logement) => (
-        <Link to={`/kasa/article/${logement.id}`} key={logement.id} className="article-link">
+        <Link to={`/article/${logement.id}`} key={logement.id} className="article-link">
           <div className="article">
             <h2>{logement.title}</h2>
             <img src={logement.cover} alt={`Photo de "${logement.title}"`} className="imgArticle" />
