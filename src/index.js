@@ -19,17 +19,13 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      
         <Routes>
           <Route path="/" element={<Home />} />
-          
+          <Route path="/kaza" element={<Home />} />          
           <Route path="/apropos" element={<Apropos />} />
-        
           <Route path="/article/:id" element={<Article />} />
-        
           <Route path="*" element={<NotFound />} />
         </Routes>
-      
       <Footer />
     </Router>
   </React.StrictMode>
