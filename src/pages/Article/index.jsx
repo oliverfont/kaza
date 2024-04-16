@@ -63,17 +63,17 @@ const Article = () => {
               <p>{article.location}</p>
             </div>
             <div className='tagContain'>
-            <ul>
-              {article.tags.map((tag, index) => (
-                <li key={index}>{tag}</li>
-              ))}
-            </ul>
-          </div>
+              <ul>
+                {article.tags.map((tag, index) => (
+                  <li key={index}>{tag}</li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className='flexbox2'>
             <div className="hostContain">
-            <p className='host'>{article.host.name}</p>
-            <img className='hostIMG' src={article.host.picture} alt={`Image : "${article.host.name}"`} />
+              <p className='host'>{article.host.name}</p>
+              <img className='hostIMG' src={article.host.picture} alt={article.host.name} />
             </div>
             <div>{getStarRating(article.rating)}</div>
           </div>
