@@ -10,7 +10,7 @@ function App() {
       <div className='notfound'>
         <img src={qcq} alt="Error 404" className='qcq' />
         <p className="oups">Oups! La page que vous demandez n'existe pas.</p>
-        <Link to="/kasa/home" className="backHome">Retourner sur la page d’accueil</Link>
+        <Link to="/" className="backHome">Retourner sur la page d’accueil</Link>
       </div>
     </div>
   );
